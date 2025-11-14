@@ -26,3 +26,5 @@ def calculator():
             operation = input("Введите операцию (+, -, *, /): ")
             if operation.lower() == 'q':
                 break
+
+            num2 = float(input("Введите второе число: "))

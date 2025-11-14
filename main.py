@@ -51,3 +51,5 @@ def calculator():
         except KeyboardInterrupt:
             print("\nПрограмма завершена")
             break
+
+calculator()

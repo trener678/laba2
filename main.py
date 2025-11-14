@@ -44,4 +44,10 @@ def calculator():
                 print("Неизвестная операция!")
                 continue
 
-            print(f"Результат: {num1} {operation} {num2} = {result}\n") 
+            print(f"Результат: {num1} {operation} {num2} = {result}\n")
+
+        except ValueError:
+            print("Ошибка: введите корректное число!")
+        except KeyboardInterrupt:
+            print("\nПрограмма завершена")
+            break

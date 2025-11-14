@@ -23,4 +23,6 @@ def calculator():
                 break
             num1 = float(num1)
 
-            
+            operation = input("Введите операцию (+, -, *, /): ")
+            if operation.lower() == 'q':
+                break

@@ -16,4 +16,11 @@ def calculator():
     print("Доступные операции: +, -, *, /")
     print("Для выхода введите 'q'")
 
-    
+    while True:
+        try:
+            num1 = input("Введите первое число (или 'q' для выхода): ")
+            if num1.lower() == 'q':
+                break
+            num1 = float(num1)
+
+            

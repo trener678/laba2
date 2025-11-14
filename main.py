@@ -11,45 +11,50 @@
 # plt.grid(True)
 # plt.show()
 
-def calculator():
-    print("Простой калькулятор")
-    print("Доступные операции: +, -, *, /")
-    print("Для выхода введите 'q'")
+# def calculator():
+#     print("Простой калькулятор")
+#     print("Доступные операции: +, -, *, /")
+#     print("Для выхода введите 'q'")
+#
+#     while True:
+#         try:
+#             num1 = input("Введите первое число (или 'q' для выхода): ")
+#             if num1.lower() == 'q':
+#                 break
+#             num1 = float(num1)
+#
+#             operation = input("Введите операцию (+, -, *, /): ")
+#             if operation.lower() == 'q':
+#                 break
+#
+#             num2 = float(input("Введите второе число: "))
+#
+#             if operation == '+':
+#                 result = num1 + num2
+#             elif operation == '-':
+#                 result = num1 - num2
+#             elif operation == '*':
+#                 result = num1 * num2
+#             elif operation == '/':
+#                 if num2 == 0:
+#                     print("Ошибка: деление на ноль!")
+#                     continue
+#                 result = num1 / num2
+#             else:
+#                 print("Неизвестная операция!")
+#                 continue
+#
+#             print(f"Результат: {num1} {operation} {num2} = {result}\n")
+#
+#         except ValueError:
+#             print("Ошибка: введите корректное число!")
+#         except KeyboardInterrupt:
+#             print("\nПрограмма завершена")
+#             break
+#
+# calculator()
 
-    while True:
-        try:
-            num1 = input("Введите первое число (или 'q' для выхода): ")
-            if num1.lower() == 'q':
-                break
-            num1 = float(num1)
+# Создаём словарь квадратов чисел от 1 до n
 
-            operation = input("Введите операцию (+, -, *, /): ")
-            if operation.lower() == 'q':
-                break
+n = int(input("Введите число n: "))
 
-            num2 = float(input("Введите второе число: "))
-
-            if operation == '+':
-                result = num1 + num2
-            elif operation == '-':
-                result = num1 - num2
-            elif operation == '*':
-                result = num1 * num2
-            elif operation == '/':
-                if num2 == 0:
-                    print("Ошибка: деление на ноль!")
-                    continue
-                result = num1 / num2
-            else:
-                print("Неизвестная операция!")
-                continue
-
-            print(f"Результат: {num1} {operation} {num2} = {result}\n")
-
-        except ValueError:
-            print("Ошибка: введите корректное число!")
-        except KeyboardInterrupt:
-            print("\nПрограмма завершена")
-            break
-
-calculator()

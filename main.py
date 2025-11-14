@@ -43,3 +43,5 @@ def calculator():
             else:
                 print("Неизвестная операция!")
                 continue
+
+            print(f"Результат: {num1} {operation} {num2} = {result}\n") 
